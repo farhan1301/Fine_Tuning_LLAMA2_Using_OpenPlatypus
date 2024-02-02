@@ -1,7 +1,7 @@
-This repo is a project to enhance the Open-Platypus dataset's utility for LLM applications, filtering out samples exceeding 2048 tokens to align with Llama 2's default max context size of 4096.
-Implemented near-deduplication strategies using embeddings to ensure the dataset's uniqueness and relevance, improving model training efficiency and output quality.
-Designed a chat template to standardize instructions and responses, facilitating the model's understanding and generation capabilities in a structured format.
-Conducted Supervised Fine Tuning (SFT) on the model, tailoring it to specific dialogue generation tasks and significantly enhancing its performance on targeted scenarios.
-Pioneered the fine-tuning of the model in 4-bit precision using QLoRA, a novel approach that drastically reduced VRAM usage without compromising model effectiveness.
-Developed and executed a text generation pipeline, leveraging the refined model to produce high-quality outputs tailored to nuanced instructions.
-Successfully reloaded the model in FP16 and seamlessly merged it with LoRA weights, optimizing the balance between computational efficiency and model performance.
+This GitHub repository documents our project on fine-tuning Llama 2 for enhanced dialogue generation, employing a novel approach that integrates 4-bit precision fine-tuning with QLoRA to drastically reduce VRAM usage. 
+
+We leveraged the Open-Platypus dataset, applying near-deduplication and filtering techniques to prepare high-quality data. This repo also includes the creation of a custom Platypus dataset, optimized through near-deduplication and token filtering, to precisely suit Llama 2’s learning requirements.
+
+The project showcases the application of Supervised Fine-Tuning (SFT) and sophisticated model optimization strategies, including gradient accumulation and 8-bit optimized AdamW, within Google Colab's constraints. 
+
+We also create a text generation pipeline that demonstrates the practical application and effectiveness of our fine-tuned model, serving as a blueprint for deploying interactive text generation applications efficiently.
